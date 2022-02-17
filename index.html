@@ -73,18 +73,25 @@
                     <!-- SAVINGS PART START -->
                     <div class="inline-flex lg:w-full w-full lg:mx-auto mt-16 ">
                             <h3 class="text-1xl mt-2 px-5 font-bold ">Savings:</h3>
-                            <input class="bg-color-grey lg:w-3/4 w-3/4 px-2 mx-2 font-semibold border rounded" type="text" value="20">
+
+                            <input id="savings-input" class="bg-color-grey lg:w-3/4 w-3/4 px-2 mx-2 font-semibold border rounded" type="text" value="20">
                             <h3 class="text-1xl mt-2 font-bold text-center">%</h3>
-                            <button class="border lg:w-3/4 w-1/4 rounded mx-2 px-5 py-2 bg-blue-500 text-white font-semibold">Save</button>   
+
+                            <button id="savings-btn" class="border lg:w-3/4 w-1/4 rounded mx-2 px-5 py-2 bg-blue-500 text-white font-semibold">Save</button>   
                     </div>
                     <!-- SAVINGS PART FINISH -->
 
+                    <!-- SAVINGS ERROR MESSAGE -->
+                    <div id="failed" class="notify-section rounded w-1/2 mx-auto">
+                        <p  class="notify text-red-600 text-center font-bold  rounded mx-e">❌ Please, Positive number less than total balance</p>    
+                    </div>
+
                     <!-- FINAL CALCULATION AFTER SAVINGS -->
                     <div class="w-3/4 mx-auto">
-                        <h1 class="text-2xl text-center font-bold my-5 ">Savings Amount: <span>2000</span></h1>
+                        <h1  class="text-2xl text-center font-bold my-5 ">Savings Amount: <span id="savings-balance">00</span></h1>
                     </div>
                     <div class="w-3/4 mx-auto">
-                        <h1 class="text-2xl text-center font-bold my-5 ">Remainig Amount: <span>2500</span></h1>
+                        <h1 class="text-2xl text-center font-bold my-5 ">Remainig Amount: <span id="remaining-balance">00</span></h1>
                     </div>
                     
                 </div>
