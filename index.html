@@ -8,6 +8,7 @@
     <!-- TAILWIND CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+
 </head>
 <body>
     <!-- HEADER PART START-->
@@ -35,31 +36,31 @@
                     </div>
                     <div class="inline-flex mb-5 w-3/4 mx-e">
                         <h3 class="text-1xl w-1/2 font-semibold text-center mx-e">Income:</h3>
-                        <input class="bg-color-grey px-2 font-semibold w-3/4 border rounded mx-auto" type="text" value="10000">
+                        <input id="income-field" class="bg-color-grey px-2 font-semibold w-3/4 border rounded mx-auto" type="text" value="00">
                     </div>
                     <div>
                         <h1 class="text-3xl text-center font-bold mb-5 ">Expenses</h1>
                     </div>
                     <div class="inline-flex mb-5 w-3/4 container mx-auto">
                         <h3 class="text-1xl w-1/2 font-semibold text-center mx-e">Food:</h3>
-                        <input class="bg-color-grey px-2 font-semibold w-3/4 border rounded mx-auto" type="text" value="300">
+                        <input id="food-field" class="bg-color-grey px-2 font-semibold w-3/4 border rounded mx-auto" type="text" value="00">
                     </div>
                     <div class="inline-flex mb-5 w-3/4 container mx-auto">
                         <h3 class="text-1xl w-1/2 font-semibold text-center mx-e">Rent:</h3>
-                        <input class="bg-color-grey px-2 font-semibold w-3/4 border rounded mx-auto" type="text" value="2000">
+                        <input id="rent-field" class="bg-color-grey px-2 font-semibold w-3/4 border rounded mx-auto" type="text" value="00">
                     </div>
                     <div class="inline-flex mb-5 w-3/4 container mx-auto">
                         <h3 class="text-1xl w-1/2 font-semibold text-center mx-e">Cloth:</h3>
-                        <input class="bg-color-grey px-2 font-semibold w-3/4 border rounded mx-auto" type="text" value="500">
+                        <input id="cloth-field" class="bg-color-grey px-2 font-semibold w-3/4 border rounded mx-auto" type="text" value="00">
                     </div>
-                    <div class="lg:w-1/4 w-3/4 mx-auto" >
+                    <div id="calculate-btn" class="lg:w-1/4 w-3/4 mx-auto" >
                         <button class="border lg:w-full w-full px-10 rounded py-2  bg-blue-500 text-white font-semibold">Calculate</button>
                     </div>
                     <div>
-                        <h1 class="text-1xl text-center font-bold my-5">Total Expenses: <span>5000</span></h1>
+                        <h1 class="text-1xl text-center font-bold my-5">Total Expenses: <span id="total-expence">00</span></h1>
                     </div>
                     <div>
-                        <h1 class="text-1xl text-center font-bold my-5 ">Total Balance: <span>4500</span></h1>
+                        <h1 class="text-1xl text-center font-bold my-5 ">Total Balance: <span id="total-balance">10000</span></h1>
                     </div>
                     <!-- INCOME and EXPENSE PART FINISH -->
 
@@ -86,6 +87,7 @@
         </section>
 
     </main>
+    <script src="app.js"></script>
     
 </body>
 </html>
